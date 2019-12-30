@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scripts/weapons/hands.gd" type="Script" id=1]
+[ext_resource path="res://models/weapons/hands.tscn" type="PackedScene" id=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="SphereMesh" id=2]
+material = SubResource( 1 )
+radius = 0.125
+height = 0.25
+
+[sub_resource type="SphereShape" id=3]
+radius = 0.13
+
+[node name="hands" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="spatial" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.269472, 0 )
+collision_layer = 1024
+collision_mask = 1024
+mode = 3
+
+[node name="mesh_instance" type="MeshInstance" parent="spatial"]
+visible = false
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="collision_shape" type="CollisionShape" parent="spatial"]
+shape = SubResource( 3 )
+
+[node name="joint" type="PinJoint" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+
+[node name="audio" type="AudioStreamPlayer3D" parent="."]
+
+[node name="hands" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.42, 0, -6.34182e-008, 0, 0.42, 0, 6.34182e-008, 0, -0.42, 0, -2, 0 )

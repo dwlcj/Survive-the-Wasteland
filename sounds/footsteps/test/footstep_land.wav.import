@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/footstep_land.wav-44df35905f7e00dae457d647c8b5fc26.sample"
+
+[deps]
+
+source_file="res://sounds/footsteps/test/footstep_land.wav"
+dest_files=[ "res://.import/footstep_land.wav-44df35905f7e00dae457d647c8b5fc26.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

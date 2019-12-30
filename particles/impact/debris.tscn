@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scripts/particles/fx.gd" type="Script" id=1]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.666667, 0.666667, 0.666667, 1 )
+
+[sub_resource type="ParticlesMaterial" id=2]
+emission_shape = 2
+emission_box_extents = Vector3( 1, 1, 1 )
+spread = 120.0
+initial_velocity = 10.0
+initial_velocity_random = 1.0
+
+[sub_resource type="CubeMesh" id=3]
+size = Vector3( 0.1, 0.1, 0.1 )
+
+[node name="debris" type="Particles"]
+material_override = SubResource( 1 )
+emitting = false
+amount = 100
+lifetime = 2.0
+one_shot = true
+speed_scale = 5.0
+explosiveness = 0.9
+process_material = SubResource( 2 )
+draw_pass_1 = SubResource( 3 )
+script = ExtResource( 1 )

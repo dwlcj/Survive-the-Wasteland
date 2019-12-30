@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/fire.wav-fa24980aa8c0daa6081aa9674a7d7610.sample"
+
+[deps]
+
+source_file="res://sounds/weapons/ar15/fire.wav"
+dest_files=[ "res://.import/fire.wav-fa24980aa8c0daa6081aa9674a7d7610.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

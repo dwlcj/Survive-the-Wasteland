@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/voice_6.wav-f64d600d7b2f24918a9953c00b3ae47c.sample"
+
+[deps]
+
+source_file="res://sounds/voice/robot/voice_6.wav"
+dest_files=[ "res://.import/voice_6.wav-f64d600d7b2f24918a9953c00b3ae47c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
